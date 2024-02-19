@@ -42,19 +42,19 @@ let totalPrice = 0;
   })
  }
 //  popup
- const nextBtn = document.getElementById('next-btn');
- const ppp = document.getElementById('popup');
- const titcketeBey = document.getElementById('ticket-buy');
- const closepopup = document.getElementById('closePopup');
- nextBtn.addEventListener('click',function(){
-  titcketeBey.classList.add('hidden')
-ppp.classList.remove('hidden')
-   console.log('hah');
- });
- closepopup.addEventListener('click',function(){
-  titcketeBey.classList.remove('hidden')
-  ppp.classList.add('hidden')
- });
+//  const nextBtn = document.getElementById('next-btn');
+//  const ppp = document.getElementById('popup');
+//  const titcketeBey = document.getElementById('ticket-buy');
+//  const closepopup = document.getElementById('closePopup');
+//  nextBtn.addEventListener('click',function(){
+//   titcketeBey.classList.add('hidden')
+// ppp.classList.remove('hidden')
+//    console.log('hah');
+//  });
+//  closepopup.addEventListener('click',function(){
+//   titcketeBey.classList.remove('hidden')
+//   ppp.classList.add('hidden')
+//  });
 // coupon
  const aplybtn = document.getElementById('applyBtn');
  aplybtn.addEventListener('click',function(){
