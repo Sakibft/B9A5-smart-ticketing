@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BUS LOVER💟</title>
+  <!-- link css -->
+  <link rel="stylesheet" href="style.css">
   <!-- daisyUi and tailwind -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <!-- section 1 -->
+
   <header class="container mx-auto mt-10 ">
     <!-- nav -->
     <nav class="mb-16">
@@ -28,35 +30,37 @@
               <li><a>Search</a></li>
             </ul>
           </div>
-          <a class=" text-4xl font-extrabold">P-Ticket</a>
+          <a class=" text-4xl font-extrabold Raleway">P-Ticket</a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-lg">
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Destination</a></li>
-            <li><a>Search</a></li> 
+            <li class="Raleway font-semibold text-lg"><a>Home</a></li>
+            <li class="Raleway font-semibold text-lg"><a>About</a></li>
+            <li class="Raleway font-semibold text-lg"><a>Destination</a></li>
+            <li class="Raleway font-semibold text-lg"><a>Search</a></li> 
           </ul>
         </div>
         <div class="navbar-end">
           <button 
-           class="btn bg-[#1DD1001A] text-lg mt-3 border-green-300 text-[#1DD100]">Bus <span><img src="./images/bus-icon.png" alt=""></span></button>
+           class="btn Raleway bg-[#1DD1001A] text-lg mt-3 border-green-300 text-[#1DD100]">Bus <span><img src="./images/bus-icon.png" alt=""></span></button>
         </div>
       </div>
     </nav>
-  <div class=" bg-contain min-h-screen bg-no-repeat bg-[url('./images/banner.png')] pt-16">
-    <div class="flex flex-col justify-center items-center gap-8  p-24 ">
-      <h1 class="text-8xl font-extrabold text-white">End-toEnd Travel with</h1>
-      <h1 class="text-[#1DD100] text-7xl font-bold">Green Line poribohon </h1>
-      <p class="text-white text-lg">Yes, you can run unit tests and view the results directly within  <br> the app. The integrated testing features allow for a streamlined .</p>
-      <button   id="buyTickets" class="font-bold btn bg-[#1DD100] border-green-500">  <a class="link no-underline" href="#midSection"> Buy ticket </a>  </button>
+      <!-- section 1 -->
+  <div class=" bg-contain min-h-screen   bg-no-repeat bg-[url('./images/banner.png')] lg:pt-16">
+    <div class="flex flex-col justify-center items-center lg:gap-10 gap-2 p-8 lg:p-24 ">
+      <h1 class="lg:text-8xl font-extrabold raleway text-white">End-toEnd Travel with</h1>
+      <h1 class="text-[#1DD100] lg:text-7xl font-bold raleway">Green Line poribohon </h1>
+      <p class="text-white inter lg:text-lg text-sm">Yes, you can run unit tests and view the results directly within  <br> the app. The integrated testing features allow for a streamlined .</p>
+      <button  id="buyTickets" class="font-bold mt-2 raleway btn bg-[#1DD100] border-green-500">  <a class="link no-underline" href="#midSection"> Buy ticket </a>  </button>
     </div>
- 
-  </div>
+                            
+  </div>                                          
   </header>
   <!--  Best offers sectioon 2 -->
   <section class="container mx-auto py-2">
-    <h1 class="font-bold text-4xl text-center">Best offers for you</h1>
+    <h1 class="font-bold text-5xl text-center Raleway">Best offers for you</h1>
+    <!-- left site -->
    <div class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-3 ">
    
     <div class="card bg-base-100 shadow-xl mt-8 bg-[#FFBF0F]">
@@ -78,7 +82,7 @@
        
       </div>
     </div>
-    <!-- 2 -->
+    <!-- right site -->
     <div class="card  bg-base-100 shadow-xl mt-8 bg-[#F78C9C]">
       <div class="  flex flex-row px-16">
         <div class="  flex flex-col p-10 gap-5">
@@ -107,10 +111,10 @@
     <P class="mt-3 text-lg">We offer the full spectrum of services to help organizations work better. Everything from <br> creating standards of excellence to training your people to work .</P>
     <!-- title -->
     <div class="card  bg-base-100 shadow-2xl mt-8 ">
-      <div class="  flex flex-row ">
+      <div class="  lg:flex flex-row ">
        <!-- container -->
        <div>
-        <div class="flex justify-between gap-96  h-40 p-5 ">
+        <div class="lg:flex justify-between gap-96  h-40 p-5  ">
           <div class="  flex p-5 gap-5">
             <img class="h-[48px]" src="images/bus-logo.png" alt="">
             <div class="flex flex-col gap-4">
@@ -137,17 +141,18 @@
         <hr class="mt-2">
        </div>
        <!-- 3 btn -->
-          <div class="p-4 flex justify-around ">
+          <div class="p-4 lg:flex justify-around ">
             <button class="btn btn-wide bg-gray-200">Boarding Point - Laxmipur </button>
             <button class="btn btn-wide bg-gray-200">Dropping Point - Bogura</button>
             <button class="btn btn-wide bg-gray-200">Est. Time - 11 Hour</button>
           </div>
            </div>
        </div>
-       <div>
-         <img src="images/info-devider.png" alt="">
+       <!-- problem 1 -->
+       <div class="hidden">
+         <img src="images/info-devider.png"  alt="">
        </div>
-       <div class="flex flex-col justify-center items-center gap-5 ml-20">
+       <div class="flex flex-col justify-center items-center gap-5 lg:ml-40">
         <img class="h-[48px] w-[48px]" src="images/fare.png" alt="">
          <h1 class="text-3xl font-extrabold"> <span id="busPrice">550</span> Taka</h1>
          <h1 class="text-2xl font-semibold text-gray-600"> Per Seat </h1>
@@ -181,7 +186,7 @@
           <div class="flex justify-between mt-3">
             <div class="flex gap-4">
             <img src="images/seat-gray.png" alt="">
-            <h1 class="text-lg ">Available</h1>
+            <h1 class="text-lg font-semibold ">Available</h1>
             </div>
             <div class="flex gap-4">
               <img src="images/seat-green-filled.png" alt="">
@@ -189,12 +194,12 @@
             </div>
           </div>
           <hr class="mt-4">
-            <!-- many 40 btn -->
-           <!-- many 40 btn --> <div class="text-end mt-4">
+           <!-- 40 btn start -->
+            <div class="text-end mt-4">
           <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg "><img  class="px-5" src="images/stearing.png" alt="">
            </button>
          </div>
-          <!-- start -->
+          <!-- start 40 -->
           <div class="grid sm:grid-cols-2 lg:grid-cols-4 mt-4  gap-4 ">
             <div class="set-btn ">
               <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg text-3xl w-full "> <span>A1</span> 
@@ -357,15 +362,13 @@
               <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full text-3xl"><span>J4</span>
              </button>
               </div>
-             
-             
-              
           </div>
         </div>
+        <!-- Right site input -->
       <div>  
         <p class="text-lg font-semibold">Select Your Seat</p>
         <hr class="mt-3">
-        <!-- RIGHT SITE INPUT -->
+        <!-- start SITE INPUT -->
         <div class="card w-full bg-base-100 shadow-2xl  mt-12 p-2">
           <div class="card-body bg-gray-100 rounded-lg ">
              <table>
@@ -376,16 +379,15 @@
               </tr>
              </table>
              <hr>
-              <div id="bus-sit" class="grid grid-cols-3 ml-28 text-lg ">
-                
-                  
-                 
+             <!-- emty div section for js -->
+              <div id="bus-sit" class="grid grid-cols-3 pl-32 items-center Inter text-lg font-semibold border-2 border-red-700 ">
               </div>
             <hr>
             <div class="flex justify-between mt-2">
               <h1 class="text-lg font-semibold">Total Price</h1>
               <h1 class="text-xl font-semibold">BDT <span id="uptotal">0</span> </h1>
             </div>
+            <!-- coupon div -->
             <div>
                <div id="coupon-hide" class="mt-2">
                 <label class="input input-bordered flex items-center gap-2">
@@ -399,7 +401,7 @@
               </div>
             </div>
           </div>
-          <!-- name emainl and number -->
+          <!-- name , number  and email-->
           <div class="mt-5 mb-5">
             <h1 class="text-xl font-semibold mb-2">Passenger Name*</h1>
             <label class="input input-bordered flex items-center gap-2">
@@ -422,23 +424,15 @@
         <div>
           <button id="next-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-full bg-green-400 text-xl text-white font-semibold"><a class="link no-underline" href="#popup"> NEXT</a></button>
         </div>
-        
         <div class="flex justify-around mt-3 mb-4 underline underline-offset-1">
           <a href="">Terms and Conditions</a>
           <a href="">Cancellation Policy</a>
         </div>
       </div>
- 
-      
       </div>
-     
-     
     </div>
-
   </section>
-  
- 
-   
+  <!-- footer -->
   <footer class="p-20 flex justify-between bg-base-200  mt-10 bg-black text-white">
     <div class="flex flex-col gap-5">
       <h1 class="font-bold text-3xl">GREEN LINE</h1>
